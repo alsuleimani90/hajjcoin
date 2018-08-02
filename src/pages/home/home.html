@@ -1,14 +1,36 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background-image: url('assets/imgs/background/background-2.jpg'); background-size: cover">
+  <img src="assets/imgs/logo.png" width="50%" style=" display: block;
+  margin-left: auto;
+  margin-right: auto; margin-bottom: 10%" >
+  <ion-grid >
+    <ion-row >
+      <ion-col >
+        <ion-row class="left-top" padding [navPush]="sellPage">
+          <br /><br /><br /><br /><br />
+Pay
+        </ion-row>
+        <ion-row class="left-bottom"   padding>
+            <br /><br /><br /><br /><br />
+            Balance
+        </ion-row >
+      </ion-col>
+      <ion-col >
+        <ion-row class="right-top" padding>
+            <br /><br />
+            Centers
+        </ion-row>
+        <ion-row class="right-center" padding>
+            <br /><br /><br />
+            Contact Us
+        </ion-row>
+        <ion-row class="right-bottom" padding>
+            <br /><br /><br />
+            About
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <button ion-button [navPush]="sellPage">TEST</button> -->
+
 </ion-content>
