@@ -19,6 +19,8 @@ import { HomePage } from '../home/home';
 export class LoginPage {
 
   backgrounds = [
+    
+    'assets/imgs/background/hajj_bg.jpg',
     'assets/imgs/background/background-1.jpg',
     'assets/imgs/background/background-2.jpg'
     

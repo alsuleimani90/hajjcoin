@@ -65,7 +65,7 @@ amount:number;
   }
   pay()
   {
-    this.rest.pay("VerifyTransaction",this.qrData,this.amount).then(mdata => {
+    this.rest.pay("PerformTransaction",this.qrData,this.amount).then(mdata => {
       // console.log("data"+data.results);
       var data = JSON.parse(mdata.data);
       // console.log("here"+JSON.stringify(data));

@@ -7,19 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>sell</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding style="background-image: url('assets/imgs/background/background-2.jpg'); background-size: cover">
+<ion-content padding style="background-image: url('assets/imgs/background/hajj_bg.jpg'); background-size: contain">
   <img src="assets/imgs/logo.png" width="50%" style=" display: block;
   margin-left: auto;
   margin-right: auto; margin-bottom: 10%" >
+  <ion-title>Recive Payment</ion-title>
+
   <ion-list>
 
-    
     <ion-item style="background-color: rgba(255, 255, 255, 0.6); color: white; ">
       <ion-label stacked>Enter Amount:</ion-label>
       <ion-input [(ngModel)]="amount" type="number"></ion-input>
@@ -28,7 +28,7 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="verify()">Continue</button>
+    <button ion-button color="secondary" block (click)="verify()">Continue</button>
   </div>
 
 </ion-content>

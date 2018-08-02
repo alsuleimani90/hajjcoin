@@ -20,4 +20,9 @@ export class RestapiServiceProvider {
     var supID:number = 1234;
     return this.nativeHttp.post(this.apiUrl+url+"/"+qr+"/"+total+"/"+supID,{},{});
   }
+  login(url:string,username:string,password:string) {
+    //this.nativeHttp.setDataSerializer('json');
+    
+    return this.nativeHttp.post(this.apiUrl+url+"/"+username+"/"+password,{},{});
+  }
 }

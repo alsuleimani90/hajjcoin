@@ -2,11 +2,11 @@
   <ion-navbar transparent>
   </ion-navbar>
 </ion-header>
-<ion-content >
-  <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
-    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+<ion-content style="background-image: url('assets/imgs/background/hajj_bg.jpg'); background-size: contain">
+  <!-- <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
+    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}" style="background-size: contain; height: 100%;">
     </ion-slide>
-  </ion-slides>
+  </ion-slides> -->
   <div class="login-container">
     <img class="logo" src="assets/imgs/logo.png" />
     <form (submit)="doLogin()">
@@ -16,7 +16,7 @@
       <ion-item>
         <ion-input type="password" placeholder="Password" style="background-color: rgba(0, 0, 0, 0.6); color: white; "></ion-input>
       </ion-item>
-      <button ion-button margin color="danger">LOGIN</button>
+      <button ion-button block color="secondary">LOGIN</button>
       <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>
     </form>
   </div>
